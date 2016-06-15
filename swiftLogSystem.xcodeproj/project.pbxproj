@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AE87A061D0FDF1400B55C0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A051D0FDF1400B55C0B /* AppDelegate.swift */; };
+		9AE87A081D0FDF1400B55C0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A071D0FDF1400B55C0B /* ViewController.swift */; };
+		9AE87A0B1D0FDF1400B55C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE87A091D0FDF1400B55C0B /* Main.storyboard */; };
+		9AE87A0D1D0FDF1400B55C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE87A0C1D0FDF1400B55C0B /* Assets.xcassets */; };
+		9AE87A101D0FDF1400B55C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE87A0E1D0FDF1400B55C0B /* LaunchScreen.storyboard */; };
+		9AE87A1C1D0FEB6700B55C0B /* XXLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A1B1D0FEB6700B55C0B /* XXLogger.swift */; };
+		9AE87A3A1D0FED4700B55C0B /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A201D0FED4700B55C0B /* CLIColor.m */; };
+		9AE87A3B1D0FED4700B55C0B /* CocoaLumberjack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A221D0FED4700B55C0B /* CocoaLumberjack.swift */; };
+		9AE87A3C1D0FED4700B55C0B /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A241D0FED4700B55C0B /* DDAbstractDatabaseLogger.m */; };
+		9AE87A3D1D0FED4700B55C0B /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A261D0FED4700B55C0B /* DDASLLogCapture.m */; };
+		9AE87A3E1D0FED4700B55C0B /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A281D0FED4700B55C0B /* DDASLLogger.m */; };
+		9AE87A3F1D0FED4700B55C0B /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A2B1D0FED4700B55C0B /* DDFileLogger.m */; };
+		9AE87A401D0FED4700B55C0B /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A2F1D0FED4700B55C0B /* DDLog.m */; };
+		9AE87A411D0FED4700B55C0B /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A321D0FED4700B55C0B /* DDTTYLogger.m */; };
+		9AE87A421D0FED4700B55C0B /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A351D0FED4700B55C0B /* DDContextFilterLogFormatter.m */; };
+		9AE87A431D0FED4700B55C0B /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A371D0FED4700B55C0B /* DDDispatchQueueLogFormatter.m */; };
+		9AE87A441D0FED4700B55C0B /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A391D0FED4700B55C0B /* DDMultiFormatter.m */; };
+		9AE87A4E1D0FEEE100B55C0B /* swift-bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A4D1D0FEEE100B55C0B /* swift-bridging-Header.m */; };
+		9AE87A551D102CFF00B55C0B /* XXLogMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE87A541D102CFF00B55C0B /* XXLogMacro.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9AE87A021D0FDF1400B55C0B /* swiftLogSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftLogSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE87A051D0FDF1400B55C0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AE87A071D0FDF1400B55C0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AE87A0A1D0FDF1400B55C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AE87A0C1D0FDF1400B55C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AE87A0F1D0FDF1400B55C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AE87A111D0FDF1400B55C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AE87A171D0FDFB700B55C0B /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = swiftLogSystem/3dparty/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		9AE87A1B1D0FEB6700B55C0B /* XXLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXLogger.swift; sourceTree = "<group>"; };
+		9AE87A1F1D0FED4700B55C0B /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
+		9AE87A201D0FED4700B55C0B /* CLIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLIColor.m; sourceTree = "<group>"; };
+		9AE87A211D0FED4700B55C0B /* CocoaLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaLumberjack.h; sourceTree = "<group>"; };
+		9AE87A221D0FED4700B55C0B /* CocoaLumberjack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaLumberjack.swift; sourceTree = "<group>"; };
+		9AE87A231D0FED4700B55C0B /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		9AE87A241D0FED4700B55C0B /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		9AE87A251D0FED4700B55C0B /* DDASLLogCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogCapture.h; sourceTree = "<group>"; };
+		9AE87A261D0FED4700B55C0B /* DDASLLogCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogCapture.m; sourceTree = "<group>"; };
+		9AE87A271D0FED4700B55C0B /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		9AE87A281D0FED4700B55C0B /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		9AE87A291D0FED4700B55C0B /* DDAssertMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAssertMacros.h; sourceTree = "<group>"; };
+		9AE87A2A1D0FED4700B55C0B /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		9AE87A2B1D0FED4700B55C0B /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		9AE87A2C1D0FED4700B55C0B /* DDLegacyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLegacyMacros.h; sourceTree = "<group>"; };
+		9AE87A2D1D0FED4700B55C0B /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		9AE87A2E1D0FED4700B55C0B /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		9AE87A2F1D0FED4700B55C0B /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		9AE87A301D0FED4700B55C0B /* DDLogMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogMacros.h; sourceTree = "<group>"; };
+		9AE87A311D0FED4700B55C0B /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		9AE87A321D0FED4700B55C0B /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		9AE87A341D0FED4700B55C0B /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		9AE87A351D0FED4700B55C0B /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		9AE87A361D0FED4700B55C0B /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		9AE87A371D0FED4700B55C0B /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		9AE87A381D0FED4700B55C0B /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		9AE87A391D0FED4700B55C0B /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		9AE87A4C1D0FEEE100B55C0B /* swift-bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "swift-bridging-Header.h"; path = "../swift-bridging-Header.h"; sourceTree = "<group>"; };
+		9AE87A4D1D0FEEE100B55C0B /* swift-bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "swift-bridging-Header.m"; path = "../swift-bridging-Header.m"; sourceTree = "<group>"; };
+		9AE87A541D102CFF00B55C0B /* XXLogMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXLogMacro.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AE879FF1D0FDF1400B55C0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AE879F91D0FDF1400B55C0B = {
+			isa = PBXGroup;
+			children = (
+				9AE87A041D0FDF1400B55C0B /* swiftLogSystem */,
+				9AE87A031D0FDF1400B55C0B /* Products */,
+				9AE87A171D0FDFB700B55C0B /* CocoaLumberjackSwift.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		9AE87A031D0FDF1400B55C0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AE87A021D0FDF1400B55C0B /* swiftLogSystem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AE87A041D0FDF1400B55C0B /* swiftLogSystem */ = {
+			isa = PBXGroup;
+			children = (
+				9AE87A1D1D0FED4700B55C0B /* cocoalog */,
+				9AE87A541D102CFF00B55C0B /* XXLogMacro.swift */,
+				9AE87A1B1D0FEB6700B55C0B /* XXLogger.swift */,
+				9AE87A051D0FDF1400B55C0B /* AppDelegate.swift */,
+				9AE87A071D0FDF1400B55C0B /* ViewController.swift */,
+				9AE87A091D0FDF1400B55C0B /* Main.storyboard */,
+				9AE87A0C1D0FDF1400B55C0B /* Assets.xcassets */,
+				9AE87A0E1D0FDF1400B55C0B /* LaunchScreen.storyboard */,
+				9AE87A111D0FDF1400B55C0B /* Info.plist */,
+				9AE87A4C1D0FEEE100B55C0B /* swift-bridging-Header.h */,
+				9AE87A4D1D0FEEE100B55C0B /* swift-bridging-Header.m */,
+			);
+			path = swiftLogSystem;
+			sourceTree = "<group>";
+		};
+		9AE87A1D1D0FED4700B55C0B /* cocoalog */ = {
+			isa = PBXGroup;
+			children = (
+				9AE87A1E1D0FED4700B55C0B /* CLI */,
+				9AE87A211D0FED4700B55C0B /* CocoaLumberjack.h */,
+				9AE87A221D0FED4700B55C0B /* CocoaLumberjack.swift */,
+				9AE87A231D0FED4700B55C0B /* DDAbstractDatabaseLogger.h */,
+				9AE87A241D0FED4700B55C0B /* DDAbstractDatabaseLogger.m */,
+				9AE87A251D0FED4700B55C0B /* DDASLLogCapture.h */,
+				9AE87A261D0FED4700B55C0B /* DDASLLogCapture.m */,
+				9AE87A271D0FED4700B55C0B /* DDASLLogger.h */,
+				9AE87A281D0FED4700B55C0B /* DDASLLogger.m */,
+				9AE87A291D0FED4700B55C0B /* DDAssertMacros.h */,
+				9AE87A2A1D0FED4700B55C0B /* DDFileLogger.h */,
+				9AE87A2B1D0FED4700B55C0B /* DDFileLogger.m */,
+				9AE87A2C1D0FED4700B55C0B /* DDLegacyMacros.h */,
+				9AE87A2D1D0FED4700B55C0B /* DDLog+LOGV.h */,
+				9AE87A2E1D0FED4700B55C0B /* DDLog.h */,
+				9AE87A2F1D0FED4700B55C0B /* DDLog.m */,
+				9AE87A301D0FED4700B55C0B /* DDLogMacros.h */,
+				9AE87A311D0FED4700B55C0B /* DDTTYLogger.h */,
+				9AE87A321D0FED4700B55C0B /* DDTTYLogger.m */,
+				9AE87A331D0FED4700B55C0B /* Extensions */,
+			);
+			name = cocoalog;
+			path = 3dparty/cocoalog;
+			sourceTree = "<group>";
+		};
+		9AE87A1E1D0FED4700B55C0B /* CLI */ = {
+			isa = PBXGroup;
+			children = (
+				9AE87A1F1D0FED4700B55C0B /* CLIColor.h */,
+				9AE87A201D0FED4700B55C0B /* CLIColor.m */,
+			);
+			path = CLI;
+			sourceTree = "<group>";
+		};
+		9AE87A331D0FED4700B55C0B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9AE87A341D0FED4700B55C0B /* DDContextFilterLogFormatter.h */,
+				9AE87A351D0FED4700B55C0B /* DDContextFilterLogFormatter.m */,
+				9AE87A361D0FED4700B55C0B /* DDDispatchQueueLogFormatter.h */,
+				9AE87A371D0FED4700B55C0B /* DDDispatchQueueLogFormatter.m */,
+				9AE87A381D0FED4700B55C0B /* DDMultiFormatter.h */,
+				9AE87A391D0FED4700B55C0B /* DDMultiFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AE87A011D0FDF1400B55C0B /* swiftLogSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE87A141D0FDF1400B55C0B /* Build configuration list for PBXNativeTarget "swiftLogSystem" */;
+			buildPhases = (
+				9AE879FE1D0FDF1400B55C0B /* Sources */,
+				9AE879FF1D0FDF1400B55C0B /* Frameworks */,
+				9AE87A001D0FDF1400B55C0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swiftLogSystem;
+			productName = swiftLogSystem;
+			productReference = 9AE87A021D0FDF1400B55C0B /* swiftLogSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AE879FA1D0FDF1400B55C0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = tomxiang;
+				TargetAttributes = {
+					9AE87A011D0FDF1400B55C0B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9AE879FD1D0FDF1400B55C0B /* Build configuration list for PBXProject "swiftLogSystem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AE879F91D0FDF1400B55C0B;
+			productRefGroup = 9AE87A031D0FDF1400B55C0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AE87A011D0FDF1400B55C0B /* swiftLogSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AE87A001D0FDF1400B55C0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE87A101D0FDF1400B55C0B /* LaunchScreen.storyboard in Resources */,
+				9AE87A0D1D0FDF1400B55C0B /* Assets.xcassets in Resources */,
+				9AE87A0B1D0FDF1400B55C0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AE879FE1D0FDF1400B55C0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE87A441D0FED4700B55C0B /* DDMultiFormatter.m in Sources */,
+				9AE87A081D0FDF1400B55C0B /* ViewController.swift in Sources */,
+				9AE87A3B1D0FED4700B55C0B /* CocoaLumberjack.swift in Sources */,
+				9AE87A3D1D0FED4700B55C0B /* DDASLLogCapture.m in Sources */,
+				9AE87A061D0FDF1400B55C0B /* AppDelegate.swift in Sources */,
+				9AE87A401D0FED4700B55C0B /* DDLog.m in Sources */,
+				9AE87A421D0FED4700B55C0B /* DDContextFilterLogFormatter.m in Sources */,
+				9AE87A4E1D0FEEE100B55C0B /* swift-bridging-Header.m in Sources */,
+				9AE87A3E1D0FED4700B55C0B /* DDASLLogger.m in Sources */,
+				9AE87A3C1D0FED4700B55C0B /* DDAbstractDatabaseLogger.m in Sources */,
+				9AE87A431D0FED4700B55C0B /* DDDispatchQueueLogFormatter.m in Sources */,
+				9AE87A3A1D0FED4700B55C0B /* CLIColor.m in Sources */,
+				9AE87A411D0FED4700B55C0B /* DDTTYLogger.m in Sources */,
+				9AE87A1C1D0FEB6700B55C0B /* XXLogger.swift in Sources */,
+				9AE87A3F1D0FED4700B55C0B /* DDFileLogger.m in Sources */,
+				9AE87A551D102CFF00B55C0B /* XXLogMacro.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9AE87A091D0FDF1400B55C0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AE87A0A1D0FDF1400B55C0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AE87A0E1D0FDF1400B55C0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AE87A0F1D0FDF1400B55C0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AE87A121D0FDF1400B55C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AE87A131D0FDF1400B55C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AE87A151D0FDF1400B55C0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swiftLogSystem/3dparty",
+				);
+				INFOPLIST_FILE = swiftLogSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mqq.tomxiang.swiftLogSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-bridging-Header.h";
+			};
+			name = Debug;
+		};
+		9AE87A161D0FDF1400B55C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swiftLogSystem/3dparty",
+				);
+				INFOPLIST_FILE = swiftLogSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mqq.tomxiang.swiftLogSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AE879FD1D0FDF1400B55C0B /* Build configuration list for PBXProject "swiftLogSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE87A121D0FDF1400B55C0B /* Debug */,
+				9AE87A131D0FDF1400B55C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AE87A141D0FDF1400B55C0B /* Build configuration list for PBXNativeTarget "swiftLogSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE87A151D0FDF1400B55C0B /* Debug */,
+				9AE87A161D0FDF1400B55C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AE879FA1D0FDF1400B55C0B /* Project object */;
+}
