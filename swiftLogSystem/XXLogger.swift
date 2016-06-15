@@ -22,6 +22,11 @@ func LogWarn(tag:String, text: String, file: StaticString = #file, function: Sta
 func LogError(tag:String, text: String, file: StaticString = #file, function: StaticString = #function, line: UInt = #line) {
     DDLogError(String("\(tag):\(text)"), file: file, function: function, line: line)
 }
+func LogVBOSE(tag:String, text: String, file: StaticString = #file, function: StaticString = #function, line: UInt = #line) {
+    DDLogVerbose(String("\(tag):\(text)"), file: file, function: function, line: line)
+}
+
+
 func LogAssert(tag:String, condition: Bool, _ text: String, file: StaticString = #file, function: StaticString = #function, line: UInt = #line) {
     if condition == false {
         DDLogError(String("\(tag):\(text)"), file: file, function: function, line: line)
